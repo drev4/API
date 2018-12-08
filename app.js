@@ -17,9 +17,6 @@ mongoose.connect('mongodb://localhost:27017/gasolineras', function(err, res) {
   console.log('Connected to Database');
 });
 
-mongoose.connection.on('error', function(){
-	console.log('eee');
-});
 
 // Middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
